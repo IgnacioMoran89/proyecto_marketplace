@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_02_182148) do
+ActiveRecord::Schema.define(version: 2021_10_02_151057) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -68,7 +68,6 @@ ActiveRecord::Schema.define(version: 2021_10_02_182148) do
     t.integer "shop_profile_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "img_url"
     t.index ["shop_profile_id"], name: "index_products_on_shop_profile_id"
   end
 
